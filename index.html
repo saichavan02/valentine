@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Jinal ❤️</title>
+<style>
+body {
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#ff5f9e,#ffc3da);
+font-family: Arial;
+overflow:hidden;
+}
+
+.card {
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,0.2);
+max-width:500px;
+z-index:2;
+}
+
+button {
+padding:12px 22px;
+margin:10px;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+}
+
+.yes { background:#ff2e7a; color:white; }
+.no { background:#ddd; }
+
+.heart {
+position:absolute;
+animation: float 6s linear infinite;
+font-size:24px;
+}
+
+@keyframes float {
+0% {transform: translateY(100vh);}
+100% {transform: translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<div class="card">
+<h1>Jinal ❤️</h1>
+<p>Tum meri life ka sabse pyaara hissa ho — Sai 💖</p>
+<h2>Will you be my Valentine?</h2>
+
+<button class="yes" onclick="alert('I Love You Jinal ❤️ — Sai')">YES 💍</button>
+<button class="no" onmouseover="this.style.position='absolute';this.style.left=Math.random()*80+'%';this.style.top=Math.random()*80+'%';">NO 😄</button>
+</div>
+
+<script>
+for(let i=0;i<25;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+h.style.animationDelay=Math.random()*6+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
